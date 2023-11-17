@@ -4,7 +4,7 @@
   <title>What's My Sign?</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" >
   <link href="style.css" rel="stylesheet">
-  <script src="script.js"></script>
+  <script src="astro.js"></script>
 
   <!-- Fonts from Google -->
 
@@ -13,12 +13,13 @@
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="main-container">
-      <div class="item-title">
-      <p>Enter Your Info Below To See Your Horoscope Profile</p>
-      </div>
-      <div class="main-item">
-        <p>Enter your Birthday: 
+    <main id="background">
+        <section class="container">
+            <div class="item-title">
+                <p>Enter Your Info Below To See Your Horoscope Profile</p>
+            </div>
+            <div class="main-item">
+                <p>Enter your Birthday: 
             <select id="birthMonth" name="Select Month">
                 <option selected="selected">Select Month</option>
                 <option value="January">January</option>
@@ -69,9 +70,9 @@
                 <option value="31">31</option>
             </select>
                 <button onclick="getHoroscope()">Submit</button></p>
-      </div>
-      <div class="getResult"><p id="result"></p></div>
-      
-  </main>
+            </div>
+            <div class="getResult"><p id="result"></p></div>
+        </section>
+    </main>
 </body>
 </html>
