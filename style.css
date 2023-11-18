@@ -1,0 +1,15 @@
+body{
+    font-family: Quicksand;
+    background-image: url("Media/galaxy.jpg");
+}
+
+.container    {
+    text-align: center;
+    background-color: lightgray;
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    margin: 120px auto;
+    padding: 15px;
+    border-radius: 20px;
+}
